@@ -1,0 +1,28 @@
+{
+  "name": "ppt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google/genai": "^1.16.0",
+    "adm-zip": "^0.5.16",
+    "dotenv": "^17.2.1",
+    "exceljs": "^4.4.0",
+    "express": "^5.1.0",
+    "file-type": "^21.0.0",
+    "helmet": "^8.1.0",
+    "inquirer": "^12.9.4",
+    "mime-types": "^3.0.1",
+    "multer": "^2.0.2",
+    "node-pptx-parser": "^1.0.1",
+    "xlsx": "^0.18.5",
+    "xml2js": "^0.6.2"
+  }
+}

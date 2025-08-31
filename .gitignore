@@ -1,0 +1,7 @@
+node_modules
+output/*
+extracted_pptx/*
+.env
+parser/output/*
+logs/app.log
+.DS_STORE
