@@ -30,19 +30,19 @@ npm start
 ```
 
 ### 📖 Usage
-1. Open public/index.html in your browser.
+1. Open `localhost:3000` in your browser.
 2. Upload a .pptx file.
 3. Wait for processing – the system will:
-4. Extract slides & notes.
-5. Process content into structured JSON.
-6. Generate and return an .xlsx file.
-7. Download the Excel sheet and review your data.
+    - Extract slides & notes.
+    - Process content into structured JSON.
+    - Generate and return an .xlsx file.
+4. Download the Excel sheet and review your data.
 
 ### 📝 Example Workflow
-Input: lecture-anatomy.pptx
-Extracted:
-output/lecture-anatomy/final_slides.json
-output/lecture-anatomy/final_slides.xlsx
+- Input: lecture-anatomy.pptx
+  - Extracted:
+  - output/lecture-anatomy/final_slides.json
+  - output/lecture-anatomy/final_slides.xlsx
 
 ### 🛠 Tech Stack
 - Node.js – Backend processing
