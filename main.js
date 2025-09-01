@@ -15,13 +15,15 @@ export const parseFile = async (filePath, outputDir) => {
 
   switch (type.mime) {
     case 'application/vnd.openxmlformats-officedocument.presentationml.presentation':
+      logger(`Detected PPT file: ${filePath}`)
       await parsePPT(filePath, outputDir)
       break
     case 'application/pdf':
-      await parsePDF(filePath)
+      logger(`Detected PDF file: ${filePath}`)
+      await parsePDF(filePath, outputDir)
       break
     case 'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
-      await parseDocs(filePath)
+      await parseDocs(filePath, outputDir)
       break
     default:
       console.log(`Unsupported file type: ${type.mime}`)
