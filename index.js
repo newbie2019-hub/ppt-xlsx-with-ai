@@ -61,12 +61,14 @@ app.post('/upload', upload.single('pptxFile'), async (req, res) => {
     // Download the generated file
     res.download(outputFilePath, filename, (err) => {
       if (err) {
-        console.error('Error downloading file:', err)
+        logger(`Error downloading PPTX file: ${JSON.stringify(err)}`)
+
         res.status(500).send('An error occurred during file download.')
       }
     })
   } catch (error) {
     console.error('Error processing PPTX file:', error)
+    logger(`Error processing PPTX file: ${error?.message}`)
     res.status(500).send('An error occurred during file processing.')
   } finally {
     // Clean up the uploaded file
